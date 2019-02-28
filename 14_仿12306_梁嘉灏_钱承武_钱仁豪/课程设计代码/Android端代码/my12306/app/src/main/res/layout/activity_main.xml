@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text=" "/>
+
+            <Button
+                android:id="@+id/tu_huochepiao"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:background="@drawable/traindj"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text=" "/>
+
+            <Button
+                android:id="@+id/tu_jipiao"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:background="@drawable/plane"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text=" "/>
+
+            <Button
+                android:id="@+id/tu_qichepiao_chuanpiao"
+                android:layout_width="0dp"
+                android:background="@drawable/bus"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text=" "/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text=" "/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/huochepiao"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="#4D4D4D"
+                android:layout_weight="5"
+                android:text="火车票   "/>
+
+            <Button
+                android:id="@+id/jipiao"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="#6BB2E1"
+                android:layout_weight="5"
+                android:text="机票"/>
+
+            <Button
+                android:id="@+id/qichepiao_chuanpiao"
+                android:layout_width="0dp"
+                android:background="#6BB2E1"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="汽车票/船票"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="355dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="#C2C2C2">
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:text=" "/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/chufa_button"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="#FFFFFF"
+                android:layout_weight="5"
+                android:text="出发"
+                android:textSize="30dp"/>
+
+            <Button
+                android:id="@+id/jiaohuan_button"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="@drawable/change"
+                android:layout_weight="2"/>
+
+            <Button
+                android:id="@+id/zhongdian_button"
+                android:layout_width="0dp"
+                android:background="#FFFFFF"
+                android:layout_height="50dp"
+                android:layout_weight="5"
+                android:textSize="30dp"
+                android:text="终点"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/data_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="请选择日期"
+                android:typeface="monospace"
+                android:textSize="18dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/chaxun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#4b31ff"
+                android:textSize="30dp"
+                android:textColor="#ffffff"
+                android:text="查询"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="355dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="#C2C2C2">
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/shouye"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="#4D4D4D"
+            android:textColor="#C2C2C2"
+            android:text="首页"/>
+        <Button
+            android:id="@+id/qiangpiao"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="#333333"
+            android:textColor="#C2C2C2"
+            android:text="抢票"/>
+        <Button
+            android:id="@+id/dingdan"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="#333333"
+            android:textColor="#C2C2C2"
+            android:text="订单"/>
+        <Button
+            android:id="@+id/wode12306"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="#333333"
+            android:textColor="#C2C2C2"
+            android:text="个人中心"/>
+    </LinearLayout>
+</RelativeLayout>
